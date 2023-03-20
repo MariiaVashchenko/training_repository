@@ -3,17 +3,18 @@
 
 list_cnt = []
 sum_cnt = input('Введите число или sum:')
-flag = 0
+
 
 while sum_cnt.lower().strip() != 'sum':
     while isinstance(sum_cnt, str):
         try:
             sum_cnt = float(sum_cnt)
-            list_cnt.append(sum_cnt)
+
         except Exception:
             print(f'Не число.Введите число или sum!')
             break
 
+        list_cnt.append(sum_cnt)
     sum_cnt = input('Введите число или sum:')
 # посчитать сумму с помощью while
 i = 0
